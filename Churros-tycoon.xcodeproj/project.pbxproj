@@ -13,6 +13,7 @@
 		6E4260A2285249DD0069AD3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4260A0285249DD0069AD3B /* Main.storyboard */; };
 		6E4260A4285249DF0069AD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4260A3285249DF0069AD3B /* Assets.xcassets */; };
 		6E4260A7285249DF0069AD3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4260A5285249DF0069AD3B /* LaunchScreen.storyboard */; };
+		6E4260AF2852BC9F0069AD3B /* ES_8-bit Sheriff - Wave Saver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E4260AE2852BC9F0069AD3B /* ES_8-bit Sheriff - Wave Saver.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6E4260A3285249DF0069AD3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4260A6285249DF0069AD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4260A8285249DF0069AD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4260AE2852BC9F0069AD3B /* ES_8-bit Sheriff - Wave Saver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ES_8-bit Sheriff - Wave Saver.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		6E426099285249DD0069AD3B /* Churros-tycoon */ = {
 			isa = PBXGroup;
 			children = (
+				6E4260AE2852BC9F0069AD3B /* ES_8-bit Sheriff - Wave Saver.mp3 */,
 				6E42609A285249DD0069AD3B /* AppDelegate.swift */,
 				6E42609C285249DD0069AD3B /* SceneDelegate.swift */,
 				6E42609E285249DD0069AD3B /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				6E4260A7285249DF0069AD3B /* LaunchScreen.storyboard in Resources */,
 				6E4260A4285249DF0069AD3B /* Assets.xcassets in Resources */,
+				6E4260AF2852BC9F0069AD3B /* ES_8-bit Sheriff - Wave Saver.mp3 in Resources */,
 				6E4260A2285249DD0069AD3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

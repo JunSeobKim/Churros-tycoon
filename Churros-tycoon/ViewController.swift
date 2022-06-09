@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     var rightFryer: String = ""
     var nowSkimmer: Int = 0
     var peopleOrder: String = "초코츄러스"
+    
+    var audioPlayer: AVAudioPlayer?
 
     // 게임 시작
     @IBAction func gameStartBtnDidTapped(_ sender: UIButton) {
@@ -171,6 +174,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.peopleDidTappedBGImage.setBackgroundImage(nil, for: .normal)
         self.orderFoodImage.image = nil
+        playMusic()
     }
     
     func setupTimer() {
@@ -243,6 +247,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @objc private func playMusic() {
+        let url = Bundle.main.url(forResource: "ES_8-bit Sheriff - Wave Saver", withExtension: "mp3")
+            if let url = url {
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    audioPlayer?.prepareToPlay()
+                    audioPlayer?.play()
+                    audioPlayer?.numberOfLoops = -1
+                } catch {
+                    print(error)
+                }
+            }
+    }
     
 }
 
