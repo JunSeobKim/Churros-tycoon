@@ -11,13 +11,13 @@ class ViewController: UIViewController {
     
     let menu = ["초코츄러스", "설탕츄러스", "생크림츄러스"]
     let people = ["people01", "people02", "people03", "people04", "people05", "people06", "people07", "people08"]
+    let skimmer: Array = ["바구니", "바구니01", "바구니02", "바구니03", "바구니04", "바구니05", "바구니06", "바구니07", "바구니08"]
     
     var nowGaming: Bool = false
     var hand: String = ""
     var score: Int = 0
     var leftFryer: String = ""
     var rightFryer: String = ""
-    var skimmer: Array = ["바구니", "바구니01", "바구니02", "바구니03", "바구니04", "바구니05", "바구니06", "바구니07", "바구니08"]
     var nowSkimmer: Int = 0
     var peopleOrder: String = "초코츄러스"
 
@@ -179,10 +179,7 @@ class ViewController: UIViewController {
             usleep(1000000)
             DispatchQueue.main.async {
                 if(self.timeLabel.text == "0") {
-                // TODO: 게임 끝 동작
-                /*
-                 점수 띄워주기
-                */
+                // 게임 끝 동작
                     let alert = UIAlertController(title: "게임 끝", message: "점수 : \(self.score)", preferredStyle: UIAlertController.Style.alert)
                     let okAction = UIAlertAction(title: "OK", style: .default) { (action) in }
                     alert.addAction(okAction)
